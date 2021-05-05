@@ -182,8 +182,8 @@ There are two steps:
 1. Take a screenshot of an interesting search result.
    Add the screenshot to your git repo, and modify the `<img>` tag below to point to the screenshot.
 
-   <img src='SearchEngine1' />
-   <img src='SearchEngine2' />
+   <img src='SearchEngine1.png' />
+   <img src='SearchEngine2.png' />
 
 
 1. Commit and push your changes to github.
