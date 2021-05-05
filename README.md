@@ -136,18 +136,18 @@ There are two steps:
 
     1. This query shows the total number of webpages loaded:
        ```
-       select count(*) from metahtml;
+       SELECT COUNT(*) FROM metahtml;
 
        Output:  
           count  
          --------
-          275826
+          331026
       
        ```
 
     1. This query shows the number of webpages loaded / hour:
        ```
-       select * from metahtml_rollup_insert order by insert_hour desc limit 100;
+       SELECT * FROM metahtml_rollup_insert ORDER BY insert_hour DESC LIMIT 100;
 
        Output:
         hll_count |  url   | hostpathquery | hostpath |  host  |      insert_hour
@@ -161,21 +161,21 @@ There are two steps:
 
     1. This query shows the hostnames that you have downloaded the most webpages from:
        ```
-       select * from metahtml_rollup_host order by hostpath desc limit 100;
+       SELECT * FROM metahtml_rollup_host2 ORDER BY hostpath DESC LIMIT 10;
 
        Output:
-         url  | hostpathquery | hostpath |        host
-        ------+---------------+----------+--------------------
-         1480 |          1478 |     1446 | com,theguardian)
-          849 |           826 |      816 | com,techrepublic)
-          711 |           697 |      692 | gov,state)
-         1071 |          1014 |      620 | com,ted)
-          195 |           190 |      191 | com,sciencedirect)
-           46 |            46 |       46 | com,aliexpress,pt)
-           39 |            39 |       39 | org,aarp,states)
-           34 |            34 |       34 | net,catholic,es)
-           33 |            33 |       33 | com,thestreet)
-           33 |            33 |       33 | com,apnews)
+          url  | hostpathquery | hostpath |        host        
+        -------+---------------+----------+--------------------
+         11117 |         11545 |    11360 | com,techrepublic)
+          9301 |          9444 |     9244 | com,theguardian)
+         15783 |         15281 |     9024 | com,ted)
+          9174 |          8847 |     8732 | gov,state)
+           763 |           743 |      693 | com,sciencedirect)
+            46 |            46 |       46 | com,aliexpress,pt)
+            39 |            39 |       39 | org,aarp,states)
+            34 |            34 |       34 | net,catholic,es)
+            33 |            33 |       33 | com,apnews)
+            33 |            33 |       33 | com,thestreet)
    
        ```
 
