@@ -13,7 +13,7 @@ cd services/downloader_warc
 docker build -t novichenko/downloader_warc .
 
 warc=$1
-name=$(basename $(dirname $warc))
+name=$(basename $warc)
 echo "warc=$name"
 
 # launch the docker container
