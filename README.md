@@ -142,6 +142,7 @@ There are two steps:
        count  
      --------
       275826
+      
        ```
 
     1. This query shows the number of webpages loaded / hour:
@@ -155,6 +156,7 @@ There are two steps:
          5 | 216463 |        208992 |   209974 | 175705 | 2021-05-03 22:00:00+00
          1 |  13573 |         13500 |    13141 |  12033 | 2021-05-03 20:00:00+00
          1 |  38913 |         38968 |    37422 |  32127 | 2021-05-01 19:00:00+00
+         
        ```
 
     1. This query shows the hostnames that you have downloaded the most webpages from:
@@ -174,6 +176,7 @@ There are two steps:
    34 |            34 |       34 | net,catholic,es)
    33 |            33 |       33 | com,thestreet)
    33 |            33 |       33 | com,apnews)
+   
        ```
 
 1. Take a screenshot of an interesting search result.
