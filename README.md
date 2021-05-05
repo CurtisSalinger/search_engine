@@ -139,9 +139,9 @@ There are two steps:
        select count(*) from metahtml;
 
        Output:  
-       count  
-     --------
-      275826
+          count  
+         --------
+          275826
       
        ```
 
@@ -150,12 +150,12 @@ There are two steps:
        select * from metahtml_rollup_insert order by insert_hour desc limit 100;
 
        Output:
- hll_count |  url   | hostpathquery | hostpath |  host  |      insert_hour
------------+--------+---------------+----------+--------+------------------------
-         5 |   3630 |          3560 |     3391 |      5 | 2021-05-05 04:00:00+00
-         5 | 216463 |        208992 |   209974 | 175705 | 2021-05-03 22:00:00+00
-         1 |  13573 |         13500 |    13141 |  12033 | 2021-05-03 20:00:00+00
-         1 |  38913 |         38968 |    37422 |  32127 | 2021-05-01 19:00:00+00
+        hll_count |  url   | hostpathquery | hostpath |  host  |      insert_hour
+       -----------+--------+---------------+----------+--------+------------------------
+                5 |   3630 |          3560 |     3391 |      5 | 2021-05-05 04:00:00+00
+                5 | 216463 |        208992 |   209974 | 175705 | 2021-05-03 22:00:00+00
+                1 |  13573 |         13500 |    13141 |  12033 | 2021-05-03 20:00:00+00
+                1 |  38913 |         38968 |    37422 |  32127 | 2021-05-01 19:00:00+00
          
        ```
 
@@ -164,18 +164,18 @@ There are two steps:
        select * from metahtml_rollup_host order by hostpath desc limit 100;
 
        Output:
- url  | hostpathquery | hostpath |        host
-------+---------------+----------+--------------------
- 1480 |          1478 |     1446 | com,theguardian)
-  849 |           826 |      816 | com,techrepublic)
-  711 |           697 |      692 | gov,state)
- 1071 |          1014 |      620 | com,ted)
-  195 |           190 |      191 | com,sciencedirect)
-   46 |            46 |       46 | com,aliexpress,pt)
-   39 |            39 |       39 | org,aarp,states)
-   34 |            34 |       34 | net,catholic,es)
-   33 |            33 |       33 | com,thestreet)
-   33 |            33 |       33 | com,apnews)
+         url  | hostpathquery | hostpath |        host
+        ------+---------------+----------+--------------------
+         1480 |          1478 |     1446 | com,theguardian)
+          849 |           826 |      816 | com,techrepublic)
+          711 |           697 |      692 | gov,state)
+         1071 |          1014 |      620 | com,ted)
+          195 |           190 |      191 | com,sciencedirect)
+           46 |            46 |       46 | com,aliexpress,pt)
+           39 |            39 |       39 | org,aarp,states)
+           34 |            34 |       34 | net,catholic,es)
+           33 |            33 |       33 | com,thestreet)
+           33 |            33 |       33 | com,apnews)
    
        ```
 
